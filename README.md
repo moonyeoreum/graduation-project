@@ -55,7 +55,8 @@
 
 
 ## 📷 시연 및 포스터  
-👉 [졸업작품 포스터 보기](./포스터%20제출.pdf)
+👉 [졸업작품 포스터 보기][포스터 제출.pdf](https://github.com/user-attachments/files/20538625/default.pdf)
+
 
 
 ## 📎 기타
