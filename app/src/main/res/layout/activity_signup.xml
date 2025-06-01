@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <!--  상단 두 개의 ToggleButton  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ToggleButton android:id="@+id/btn_visual" android:layout_width="0dp" android:layout_height="176dp" android:layout_weight="1" android:checked="false" android:textColor="#000000" android:textOff="@string/visual_text" android:textOn="@string/visual_text" android:textSize="50sp" android:background="@drawable/custom_button_selector"/>
+        <ToggleButton android:id="@+id/btn_non_visual" android:layout_width="0dp" android:layout_height="176dp" android:layout_weight="1" android:checked="false" android:textColor="#000000" android:textOff="@string/non_visual_text" android:textOn="@string/non_visual_text" android:textSize="50sp" android:background="@drawable/custom_button_selector"/>
+    </LinearLayout>
+    <!--  중단 두 개의 ToggleButton  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ToggleButton android:id="@+id/btn_man" android:layout_width="0dp" android:layout_height="176dp" android:layout_weight="1" android:textColor="#000000" android:textOff="@string/male_text" android:textOn="@string/male_text" android:background="@drawable/custom_button_selector" android:textSize="50sp"/>
+        <ToggleButton android:id="@+id/btn_woman" android:layout_width="0dp" android:layout_height="176dp" android:layout_weight="1" android:textColor="#000000" android:textOff="@string/female_text" android:textOn="@string/female_text" android:background="@drawable/custom_button_selector" android:textSize="50sp"/>
+    </LinearLayout>
+    <!--  하단 두 개의 ToggleButton  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ToggleButton android:id="@+id/btn_pregnant" android:layout_width="0dp" android:layout_height="176dp" android:layout_weight="1" android:textColor="#000000" android:textOff="@string/pregnant_text" android:textOn="@string/pregnant_text" android:background="@drawable/custom_button_selector" android:textSize="50sp"/>
+        <ToggleButton android:id="@+id/btn_non_pregnant" android:layout_width="0dp" android:layout_height="176dp" android:layout_weight="1" android:textColor="#000000" android:textOff="@string/non_pregnant_text" android:textOn="@string/non_pregnant_text" android:background="@drawable/custom_button_selector" android:textSize="50sp"/>
+    </LinearLayout>
+    <!--  스위치 버튼  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/ONOFF_Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showText="true"
+            android:text="@string/switch_text"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@android:drawable/button_onoff_indicator_off" />
+    </LinearLayout>
+    <!--  하단의 두 개의 ToggleButton  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="159dp">
+        <ToggleButton android:id="@+id/btn_previous" android:layout_width="0dp" android:layout_height="58dp" android:layout_weight="1" android:contentDescription="@string/back_button_text" android:textColor="#000000" android:textOff="@string/back_button_text" android:textOn="@string/back_button_text" android:textSize="20sp"/>
+        <View android:layout_width="0dp" android:layout_height="142dp" android:layout_gravity="end" android:layout_weight="1"/>
+        <Button android:id="@+id/btn_register" android:layout_width="0dp" android:layout_height="61dp" android:layout_weight="1" android:text="@string/sign_up" android:textColor="#000000" android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

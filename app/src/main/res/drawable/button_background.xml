@@ -1,0 +1,6 @@
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFA500" /> <!-- 연한 주황색 설정 -->
+    <corners android:radius="200dp" /> <!-- 모서리를 동그랗게 설정 (원하는 크기로 조정 가능) -->
+</shape>
+

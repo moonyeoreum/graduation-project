@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 상단 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <!-- [BACK] 버튼 -->
+        <Button
+            android:id="@+id/btn_before"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="7dp"
+            android:backgroundTint="#FFC107"
+            android:text="이전으로"
+            android:textSize="16sp" />
+
+        <!-- [의약품 추가] 텍스트 -->
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="0px"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="의약품 추가"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <!-- [NEXT] 버튼 -->
+        <Button
+            android:id="@+id/btn_After"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#FFC107"
+            android:text="다음으로"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 노란색 가로 줄 -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#FFC107" />
+
+    <!-- [의약품을 검색하세요.] 입력 필드 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/med_infor"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="username"
+            android:hint="의약품을 검색하세요."
+            android:textSize="25sp" />
+
+        <!-- [+의약품 추가] 버튼 -->
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="검색하기" />
+    </LinearLayout>
+
+    <!-- 노란색 가로 줄 -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#FFC107" />
+
+    <!-- 의약품 리스트를 표시하는 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medicineRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- [+의약품 추가] 버튼 -->
+    <Button
+        android:id="@+id/med_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="선택한 의약품 추가" />
+
+    <!-- [-의약품 삭제] 버튼 -->
+    <Button
+        android:id="@+id/Delect_Item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="선택한 의약품 삭제" />
+
+    <!-- [입력 확인] 버튼 -->
+</LinearLayout>
+
+
+

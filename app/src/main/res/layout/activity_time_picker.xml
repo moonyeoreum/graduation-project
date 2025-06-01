@@ -1,0 +1,133 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 타임피커를 표시하는 뷰 -->
+
+        <!-- 알람 이름 입력란 -->
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp" />
+
+        <EditText
+            android:id="@+id/etAlarmName"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timePicker"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="알람 이름"
+            android:inputType="text"/>
+
+        <!-- 요일 선택 버튼 -->
+        <GridLayout
+            android:id="@+id/gridDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAlarmName"
+            android:layout_marginTop="20dp"
+            android:columnCount="7"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <Button
+                android:id="@+id/btnSun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="일"/>
+            <Button
+                android:id="@+id/btnMon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="월"/>
+            <Button
+                android:id="@+id/btnTue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="화"/>
+            <Button
+                android:id="@+id/btnWed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="수"/>
+            <Button
+                android:id="@+id/btnThu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="목"/>
+            <Button
+                android:id="@+id/btnFri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="금"/>
+            <Button
+                android:id="@+id/btnSat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="토"/>
+        </GridLayout>
+
+        <!-- 간격 선택 라디오그룹 -->
+        <RadioGroup
+            android:id="@+id/radioGroupInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridDays"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbInterval3Hours"
+                android:layout_width="136dp"
+                android:layout_height="46dp"
+                android:text="3시간 간격"
+                android:layout_gravity="center" />
+            <RadioButton
+                android:id="@+id/rbInterval4Hours"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:text="4시간 간격"
+                android:layout_gravity="center" />
+            <RadioButton
+                android:id="@+id/rbInterval5Hours"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:text="5시간 간격"
+                android:layout_gravity="center" />
+            <RadioButton
+                android:id="@+id/rbNoInterval"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="해당 없음"
+                android:layout_gravity="center" />
+        </RadioGroup>
+
+        <!-- 알람 등록 버튼 -->
+        <Button
+            android:id="@+id/btnSetAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알람 등록"
+            android:layout_below="@id/radioGroupInterval"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</ScrollView>

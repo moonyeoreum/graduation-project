@@ -1,0 +1,9 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <!--  알람 이름을 표시하는 텍스트뷰  -->
+    <TextView android:id="@+id/tvAlarmName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="알람 이름" android:textSize="18sp" android:textColor="@android:color/black"/>
+    <!--  알람 시간을 표시하는 텍스트뷰  -->
+    <TextView android:id="@+id/tvAlarmTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tvAlarmName" android:layout_marginTop="8dp" android:text="알람 시간" android:textSize="16sp" android:textColor="@android:color/darker_gray"/>
+    <!--  알람 해제 버튼  -->
+    <Button android:id="@+id/btnDismissAlarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tvAlarmTime" android:layout_marginTop="8dp" android:text="알람 해제"/>
+</RelativeLayout>

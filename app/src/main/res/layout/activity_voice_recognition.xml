@@ -1,0 +1,40 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceRecognitionActivity">
+
+    <!-- 음성인식 버튼 -->
+    <ToggleButton
+        android:id="@+id/startVoiceRecognitionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/button_selector"
+        android:onClick="startVoiceRecognition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+    <!-- 결과 텍스트 표시 영역 -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/my_text"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/startVoiceRecognitionButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintWidth_max="300dp"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

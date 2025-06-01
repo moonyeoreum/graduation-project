@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 사용자 정보 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="내 정보"
+        android:textColor="#0B0A0A"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- 이름 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:text="이름"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="148dp"
+            android:layout_height="37dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 나이 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:text="나이"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/user_age_text"
+            android:layout_width="136dp"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 성별 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="18dp"
+            android:gravity="start"
+            android:text="성별"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/user_gender_text"
+            android:layout_width="128dp"
+            android:layout_height="43dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 질병 정보 추가 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginStart="18dp"
+            android:gravity="start"
+            android:text="질병 정보"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/user_diease_text"
+            android:layout_width="128dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="18dp"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!-- 버튼: 약 추가 및 정보 수정 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_med_add"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_illnessadd" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btn_infor_modify"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_user_informodify"
+            />
+
+    </LinearLayout>
+
+    <!-- 버튼: 로그아웃 및 회원 탈퇴 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="#F5BB0C"
+            android:text="로그아웃"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btn_withdraw"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="#F5BB0C"
+            android:text="회원 탈퇴"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!-- 버튼: 뒤로가기 (왼쪽 하단) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="horizontal"></LinearLayout>
+    <Button
+        android:id="@+id/btn_back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="뒤로가기"
+        android:textSize="16sp" />
+</LinearLayout>
+
+

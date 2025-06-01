@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52008447175",
+    "project_id": "labrador-864eb",
+    "storage_bucket": "labrador-864eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52008447175:android:3d0e253d59c78ba9a122e2",
+        "android_client_info": {
+          "package_name": "com.example.labrador"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7ywfCWP0WPzzxhCErGX_31o5LLOHxljM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
